@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .outer{
+            height:200px;
+            width:100%;
+            <!--border:1px solid red;-->
+        }
+        @media screen and (min-width:600px){
+            .inner{
+                height:100%;
+                width:300px;
+                <!--border:1px solid red;-->
+                margin:auto;
+	        }
+	        .left{
+                height:50%;
+                width:100%;
+                border:1px solid red;
+                float:left;
+            }
+	        .right{
+                height:50%;
+                width:100%;
+                border:1px solid red;
+                float:left;
+	        }
+        }
+        @media screen and (min-width:900px){
+           .inner{
+                height:100%;
+                width:900px;
+                <!--border:1px solid red;-->
+                margin:auto;
+	       }
+           .left{
+               height:100%;
+               width:900px;
+               border:1px solid red;
+               float:left;
+               position:relative;
+               }
+           .left-top{
+               height:100px;
+               width:100%;
+               border:1px solid red;
+               position:absolute;
+               left:0;
+               top:0;
+               }
+           .left-top-left{
+               height:100%;
+               width:66%;
+               border:1px solid red;
+               float:left;
+               }
+           .left-top-right{
+               height:100%;
+               width:33%;
+               border:1px solid red;
+               float:left;
+               }
+           .left-bottom{
+               height:100px;
+               width:100%;
+               border:1px solid red;
+               position:absolute;
+               left:0;
+               top:100px;
+               }
+           .right{
+               height:0;
+               width:0;
+           }
+        }
+
+        @media screen and (min-width:1200px){
+            .inner{
+                height:100%;
+                width:1200px;
+                <!--border:1px solid red;-->
+                margin:auto;
+	            }
+            .left{
+                height:100%;
+                width:900px;
+                border:1px solid red;
+                float:left;
+                position:relative;
+                }
+            .left-top{
+                height:100px;
+                width:100%;
+                border:1px solid red;
+                position:absolute;
+                left:0;
+                top:0;
+                }
+            .left-top-left{
+                height:100%;
+                width:66%;
+                border:1px solid red;
+                float:left;
+                }
+            .left-top-right{
+                height:100%;
+                width:33%;
+                border:1px solid red;
+                float:left;
+                }
+            .left-bottom{
+                height:100px;
+                width:100%;
+                border:1px solid red;
+                position:absolute;
+                left:0;
+                top:100px;
+                }
+            .right{
+                height:100%;
+                width:290px;
+                border:1px solid red;
+                float:left;
+                }
+            .right>div{
+                height:50px;
+                width:100%;
+                border:1px solid red;
+                float:left;
+                }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="left">
+                <div class="left-top">
+                    <div class="left-top-left"></div>
+                    <div class="left-top-right"></div>
+                </div>
+                <div class="left-bottom">
+                    <div class="left-top-right"></div>
+                    <div class="left-top-left"></div>
+                </div>
+            </div>
+            <div class="right">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
