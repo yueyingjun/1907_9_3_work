@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+body{
+	margin:0;
+	padding:0;}
+	@media screen and (min-width:1200px){
+	.left{
+		width:900px;
+		height:200px;
+		float:left;
+		background:#066;
+		}
+	.right{
+		width:300px;
+		height:200px;
+		float:left;
+		background:#000;}
+		
+	.one{
+		width:600px;
+		height:100px;
+		float:left;
+		background:#303;}
+	.two{
+		width:300px;
+		height:100px;
+		float:left;
+		background:#930;}
+	.three{width:300px;
+		height:100px;
+		float:left;
+		background:#936;}
+	.four{
+		width:600px;
+		height:100px;
+		float:left;
+		background:#789;
+		}
+	.five{
+		height:50px;
+		width:300px;
+		background:#3F9;
+		border:1px solid #000;
+		box-sizing:border-box;
+		}
+	}
+	@media screen and (max-width:1200px){
+		.left{
+		width:900px;
+		height:200px;
+		float:left;
+
+		}
+
+	.one{
+		width:600px;
+		height:100px;
+		float:left;
+		background:#303;}
+	.two{
+		width:300px;
+		height:100px;
+		float:left;
+		background:#930;}
+	.three{width:300px;
+		height:100px;
+		float:left;
+		background:#936;}
+	.four{
+		width:600px;
+		height:100px;
+		float:left;
+		background:#789;
+		}		
+	}
+	@media screen and (max-width:600px){
+	
+	.two,.three,.right,.five{display:none;}
+		.left{
+		width:600px;
+		height:200px;
+		float:left;
+
+		}
+	.one{
+		width:600px;
+		height:100px;
+		
+		background:#303;}
+
+	.four{
+		width:600px;
+		height:100px;
+		
+		background:#789;
+		}		
+	}
+</style>
+
+
+
+<body>
+	<div>
+    	<div class="left">
+        	<div class="left-top">
+            	<div class="one"></div>
+            	<div class="two"></div>
+            </div>
+        	<div class="left-botton">
+            	<div class="three"></div>
+            	<div class="four"></div>
+            </div>
+        </div>
+    	<div class="right">
+        	<div class="five"></div>
+        	<div class="five"></div>
+            <div class="five"></div>
+        	<div class="five"></div>
+        </div>
+    </div>
+</body>
+</html>
