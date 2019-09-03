@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            width: 48%;
+            height: 150px;
+            background: #2691fd;
+            float: left;
+        }
+        .box2{
+            width: 24%;
+            height: 150px;
+            background: #3a768f;
+            float: left;
+        }
+        .box3{
+            width: 24%;
+            height: 150px;
+            float: left;
+        }
+        .box31{
+             width: 100%;
+             height: 75px;
+             background: #f38009;
+         }
+        .box32{
+            width: 100%;
+            height: 75px;
+            background: #330000;
+        }
+        .box4{
+            width: 24%;
+            height: 150px;
+            background: #04569A;
+            float: left;
+        }
+        .box5{
+            width: 48%;
+            height: 150px;
+            background: #009966;
+            float: left;
+        }
+        .box6{
+            width: 24%;
+            height: 150px;
+            float: left;
+        }
+        .box61{
+            width: 100%;
+            height: 75px;
+            background: #6a6aa7;
+        }
+        .box62{
+            width: 100%;
+            height: 75px;
+            background: #6ccae6;
+        }
+       
+        @media only screen and (max-width: 900px)  {
+            .box31,.box32,.box62,.box61{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .box2,.box4,.box31,.box32,.box62,.box61{
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3">
+    <div class="box31"></div>
+    <div class="box32"></div>
+</div>
+<div class="box4"></div>
+<div class="box5"></div>
+<div class="box6">
+    <div class="box61"></div>
+    <div class="box62"></div>
+</div>
+<div style="clear: both"></div>
+</body>
+
+
+</html>
