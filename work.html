@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @media screen and (min-width: 600px){
+            .one{
+                width: 600px;height: 200px;
+            }
+            .one div:nth-child(1){
+                width: 600px;height: 100px;
+                background-color: #ff892b;
+            }
+            .one div:nth-child(2){
+                width: 600px;height: 100px;
+                background-color: #cccccc;
+            }
+        }
+        @media screen and (min-width: 900px){
+            .one{
+                width: 900px;height: 600px;
+            }
+            .one div:nth-child(1){
+                float: left;
+                width: 600px;height: 300px;
+                background-color: #ff892b;
+            }
+            .one div:nth-child(2){
+                float: left;
+                width: 300px;height: 300px;
+                background-color: #cccccc;
+            }
+            .one div:nth-child(3){
+                float: left;
+                width: 300px;height: 300px;
+                background-color: black;
+            }
+            .one div:nth-child(4){
+                float: left;
+                width: 600px;height: 300px;
+                background-color: #43ff17;
+            }
+
+        }
+        @media  screen and (min-width: 1200px){
+            .one{
+                width: 1200px;height: 600px;
+                border: 1px solid black;
+            }
+            .one div:nth-of-type(1){
+                float: left;
+                width: 600px;height:300px;
+                background-color: #cccccc;
+            }
+            .one div:nth-of-type(2){
+                float: left;
+                width: 300px;height:300px;
+                background-color: #ff892b;
+            }
+            .one div:nth-of-type(3){
+                float: right;
+                width: 300px;height: 600px;
+            }
+            .one-1 div:nth-of-type(1){
+
+                width: 300px;height:150px;
+                background-color: blue;
+            }
+            .one-1 div:nth-of-type(2){
+
+                width: 300px;height:150px;
+                background-color: #43ff17;
+            }
+            .one-1 div:nth-of-type(3){
+
+                width: 300px;height:150px;
+                background-color: #ff6fc1;
+            }
+
+            .one div:nth-of-type(4){
+                float: left;
+                width: 300px;height: 300px;
+                background-color: black;
+            }
+            .one-1 div:nth-of-type(4){
+                width: 300px;height:150px;
+                background-color: #54fffc;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="one">
+        <div></div>
+        <div></div>
+        <div class="one-1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    <div></div>
+</div>
+</body>
+</html>
