@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width: 1200px){
+            .da{
+                width: 1200px;
+                height: 400px;
+                background: red;
+                position: relative;
+            }
+
+            .d1{
+                height: 200px;
+                width: 600px;
+                background: #000;
+                float: left;
+            }
+            .d2{
+                height: 200px;
+                width: 300px;
+                background: #2691fd;
+                float: left;
+            }
+            .d3{
+                height: 200px;
+                width: 300px;
+                background: #b85a6c;
+                float: left;
+                position: absolute;
+                margin-top: 200px;
+            }
+            .d4{
+                height: 200px;
+                width: 600px;
+                background: orange;
+                position: absolute;
+                margin-left: 300px;
+                margin-top: 200px;
+            }
+            .right{
+                height: 400px;
+                width: 300px;
+                float: right;
+            }
+            .d5{
+                height: 100px;
+                width: 300px;
+                background: blueviolet;
+            }
+            .d6{
+                height: 100px;
+                width: 300px;
+                background: lawngreen;
+            }
+            .d7{
+                height: 100px;
+                width: 300px;
+                background: beige;
+            }
+            .d8{
+                height: 100px;
+                width: 300px;
+                background: darkslategray;
+            }
+        }
+
+
+        @media screen and (max-width: 1200px){
+            .da{
+                width: 900px;
+                height: 400px;
+                background: red;
+                position: relative;
+            }
+            .d1{
+                width: 600px;
+                height: 200px;
+                background: #000;
+                float: left;
+            }
+            .d2{
+                width: 300px;
+                height: 200px;
+                background: #2691fd;
+                float: left;
+            }
+            .d3{
+                width: 300px;
+                height: 200px;
+                background: #b85a6c;
+                float: left;
+            }
+            .d4{
+                width: 600px;
+                height: 200px;
+                background: orange;
+                margin-left: 300px;
+                float: left;
+                position: absolute;
+                margin-top: 200px;
+            }
+        }
+        @media screen and (max-width: 600px){
+            .d2,.d3,.d5,.d6,.d7,.d8{
+                display: none;
+            }
+            .da{
+                width: 600px;
+                height: 400px;
+                background: red;
+                position: relative;
+            }
+            .d1{
+                background: #000;
+                width: 600px;
+                height: 200px;
+            }
+            .d4{
+                background: orange;
+                width: 600px;
+                height: 200px;
+                margin-left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="da">
+
+
+<div class="d1"></div>
+<div class="d2"></div>
+<div class="d3"></div>
+<div class="d4"></div>
+
+    <div class="right">
+<div class="d5"></div>
+<div class="d6"></div>
+<div class="d7"></div>
+<div class="d8"></div>
+    </div>
+</div>
+</body>
+</html>
