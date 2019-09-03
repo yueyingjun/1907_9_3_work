@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式作业</title>
+    <style>
+        @media screen and (min-width: 600px){
+            .left{
+                width: 900px;
+                height: 600px;
+                float: left;
+            }
+            .left-top,.left-bottom{
+                width: 900px;
+                height: 300px;
+            }
+            .left-top-left{
+                width: 600px;
+                height: 100%;
+                background-color: green;float: left;
+            }
+            .left-top-left,.left-bottom-right{
+                width: 600px;
+                height: 100%;
+                background-color: #cccccc;float: left;
+            }
+        }
+        @media screen and (min-width: 900px){
+            .left{
+                width: 900px;
+                height: 600px;
+                float: left;
+            }
+            .left-top,.left-bottom{
+                width: 900px;
+                height: 300px;
+            }
+            .left-top-left,.left-bottom-right{
+                width: 600px;
+                height: 100%;
+                background-color: green;float: left;
+            }
+            .left-top-right,.left-bottom-left{
+                width: 300px;
+                height: 100%;
+                background-color: black;
+                float: left;
+            }
+        }
+        @media screen and (min-width: 1200px){
+            .left{
+                width: 900px;
+                height: 600px;
+                float: left;
+            }
+            .right{
+                width: 300px;
+                height: 600px;
+                float: left;
+            }
+            .left-top,.left-bottom{
+                width: 900px;
+                height: 300px;
+            }
+            .left-top-left,.left-bottom-right{
+                width: 600px;
+                height: 100%;
+                background-color: red;
+                float: left;
+            }
+            .left-top-right,.left-bottom-left{
+                width: 300px;
+                height: 100%;
+                background-color: black;
+                float: left;
+            }
+            .right .right-one{
+                width: 300px;
+                height: 150px;
+                background-color: #01b5ff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <div class="left-top">
+            <div class="left-top-left"></div>
+            <div class="left-top-right"></div>
+        </div>
+        <div class="left-bottom">
+            <div class="left-bottom-left"></div>
+            <div class="left-bottom-right"></div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="right-one"></div>
+        <div class="right-one"></div>
+        <div class="right-one"></div>
+        <div class="right-one"></div>
+    </div>
+</body>
+</html>
