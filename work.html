@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webwork</title>
+
+    <style>
+        div{
+            width: 1200px;height: 400px;
+        }
+        @media screen and (min-width: 1200px) {
+            .left{
+                width: 900px;height: 100%;
+                float: left;
+            }
+            .left-top{
+                width: 900px;height: 200px;
+            }
+            .left-top>div{
+                float: left;
+            }
+            .left-top div:nth-of-type(1){
+                width:600px;height: 100%;
+                background: #1F81E0;
+            }
+            .left-top div:nth-of-type(2){
+                width:300px;height: 100%;
+                background: green;
+            }
+            .left-bot{
+                width: 900px;height: 200px;
+            }
+            .left-bot>div{
+                float: left;
+            }
+            .left-bot div:nth-of-type(1){
+                width:300px;height: 100%;
+                background: rebeccapurple;
+            }
+            .left-bot div:nth-of-type(2){
+                width:600px;height: 100%;
+                background: teal;
+            }
+            .right{
+                width: 300px;height: 390px;
+                float: right;
+            }
+            .right>div{
+                width: 298px;height: 98px;
+                background: palevioletred;
+                border: 1px solid black;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            .left{
+                width: 1200px;height: 100%;
+                float: left;
+            }
+            .left-top{
+                width: 1200px;height: 200px;
+            }
+            .left-top>div{
+                float: left;
+            }
+            .left-top div:nth-of-type(1){
+                width:800px;height: 100%;
+                background: #1F81E0;
+            }
+            .left-top div:nth-of-type(2){
+                width:400px;height: 100%;
+                background: green;
+            }
+            .left-bot{
+                width: 1200px;height: 200px;
+            }
+            .left-bot>div{
+                float: left;
+            }
+            .left-bot div:nth-of-type(1){
+                width:400px;height: 100%;
+                background: rebeccapurple;
+            }
+            .left-bot div:nth-of-type(2){
+                width:800px;height: 100%;
+                background: teal;
+            }
+
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .left-top {
+                width:1200px;height: 200px;
+                background: #1F81E0;
+            }
+            .left-bot {
+                width:1200px;height: 200px;
+                background: teal;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div >
+    <div class="left">
+        <div class="left-top">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="left-bot">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="right">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+</body>
+</html>
